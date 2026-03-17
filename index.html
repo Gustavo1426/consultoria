@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Método Evolução Workout</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:linear-gradient(180deg,#0f0f0f,#1a1a1a,#0f0f0f);
+color:white;
+}
+
+/* HERO */
+
+.hero{
+background:url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48") center/cover no-repeat;
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+}
+
+.hero-overlay{
+background:rgba(0,0,0,0.75);
+padding:60px;
+border-radius:15px;
+max-width:700px;
+backdrop-filter:blur(6px);
+}
+
+.hero h1{
+font-size:44px;
+color:#ff6a00;
+}
+
+.hero p{
+margin-top:15px;
+font-size:18px;
+color:#ddd;
+}
+
+.hero button{
+margin-top:25px;
+background:#ff6a00;
+border:none;
+padding:16px 30px;
+font-size:18px;
+border-radius:8px;
+cursor:pointer;
+color:white;
+box-shadow:0 0 20px rgba(255,106,0,0.6);
+transition:0.3s;
+}
+
+.hero button:hover{
+transform:scale(1.05);
+box-shadow:0 0 35px rgba(255,106,0,0.9);
+}
+
+/* SEÇÕES */
+
+.section{
+padding:90px 20px;
+text-align:center;
+}
+
+.section h2{
+margin-bottom:40px;
+font-size:36px;
+color:#ff6a00;
+}
+
+/* COMO FUNCIONA */
+
+.metodo{
+max-width:900px;
+margin:auto;
+text-align:left;
+line-height:1.8;
+font-size:18px;
+}
+
+/* PLANOS */
+
+.planos{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+}
+
+.plano{
+
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,255,255,0.08);
+
+padding:35px;
+border-radius:14px;
+
+width:300px;
+
+box-shadow:0 20px 40px rgba(0,0,0,0.6);
+
+transition:0.3s;
+
+}
+
+.plano:hover{
+transform:translateY(-10px);
+}
+
+.preco{
+font-size:34px;
+margin:15px 0;
+color:#ff6a00;
+}
+
+.plano ul{
+text-align:left;
+margin-top:10px;
+}
+
+.plano li{
+margin:10px 0;
+}
+
+.desc{
+margin-top:15px;
+font-size:14px;
+color:#bbb;
+}
+
+/* DESTAQUE */
+
+.destaque{
+
+border:2px solid #ff6a00;
+
+background:linear-gradient(180deg,#1f1f1f,#141414);
+
+box-shadow:0 25px 60px rgba(255,106,0,0.35);
+
+transform:scale(1.07);
+
+}
+
+.tag{
+background:#ff6a00;
+padding:6px 12px;
+font-size:12px;
+border-radius:6px;
+display:inline-block;
+margin-bottom:10px;
+}
+
+/* BOTÃO */
+
+.btn{
+margin-top:20px;
+background:#ff6a00;
+border:none;
+padding:14px;
+border-radius:6px;
+color:white;
+cursor:pointer;
+width:100%;
+box-shadow:0 0 15px rgba(255,106,0,0.5);
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+box-shadow:0 0 30px rgba(255,106,0,0.9);
+}
+
+/* TRANSFORMAÇÕES */
+
+.transformacoes{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+justify-content:center;
+}
+
+.transformacoes img{
+width:280px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.transformacoes img:hover{
+transform:scale(1.05);
+}
+
+/* DEPOIMENTOS */
+
+.depoimentos{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+}
+
+.card{
+background:rgba(255,255,255,0.05);
+padding:25px;
+border-radius:12px;
+width:280px;
+}
+
+/* PARA QUEM */
+
+.publico{
+display:flex;
+flex-wrap:wrap;
+gap:40px;
+justify-content:center;
+max-width:900px;
+margin:auto;
+text-align:left;
+}
+
+.publico ul{
+line-height:2;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25d366;
+color:white;
+font-size:30px;
+padding:16px;
+border-radius:50%;
+text-decoration:none;
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:30px;
+background:#000;
+color:#aaa;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="hero-overlay">
+
+<h1>Método Evolução Workout</h1>
+
+<p>Treino, dieta e acompanhamento estratégico para transformar seu corpo.</p>
+
+<button onclick="window.location.href='https://wa.me/5543996678692'">
+Quero começar agora
+</button>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Como funciona o método</h2>
+
+<div class="metodo">
+
+<p><b>1️⃣ Avaliação estratégica</b><br>
+Analisamos objetivo, rotina e histórico de treino.</p>
+
+<p><b>2️⃣ Plano personalizado</b><br>
+Treino e dieta montados especificamente para seu corpo.</p>
+
+<p><b>3️⃣ Ajustes inteligentes</b><br>
+O plano evolui conforme seus resultados.</p>
+
+<p><b>4️⃣ Acompanhamento constante</b><br>
+Correções, feedback e direcionamento para manter consistência.</p>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Escolha seu nível de acompanhamento</h2>
+
+<div class="planos">
+
+<div class="plano">
+
+<h3>Bronze</h3>
+<div class="preco">R$98/mês</div>
+
+<ul>
+<li>Treino personalizado</li>
+<li>Dieta personalizada</li>
+<li>Ajuste de treino em 30 ou 60 dias</li>
+<li>Contato apenas na primeira semana</li>
+<li>(alinhamento e tirar dúvidas)</li>
+</ul>
+
+<p class="desc">
+Ideal pra quem tem disciplina e só precisa do caminho certo.
+</p>
+
+<button class="btn" onclick="window.location.href='https://wa.me/5543996678692'">
+Começar
+</button>
+
+</div>
+
+<div class="plano destaque">
+
+<div class="tag">⭐ MAIS ESCOLHIDO</div>
+
+<h3>Prata</h3>
+<div class="preco">R$150/mês</div>
+
+<ul>
+<li>Treino personalizado</li>
+<li>Dieta personalizada</li>
+<li>Ajuste de treino em 30 dias</li>
+<li>Contato limitado comigo</li>
+<li>Envio de vídeos para correção</li>
+<li>Avaliação por fotos a cada 4 semanas</li>
+</ul>
+
+<button class="btn" onclick="window.location.href='https://wa.me/5543996678692'">
+Começar
+</button>
+
+</div>
+
+<div class="plano">
+
+<h3>Ouro</h3>
+<div class="preco">R$250/mês</div>
+
+<ul>
+<li>Treino personalizado</li>
+<li>Dieta personalizada</li>
+<li>Avaliação física mensal</li>
+<li>Ajustes de treino em 30 dias</li>
+<li>Contato direto e ilimitado comigo</li>
+<li>Envio de vídeos para correção de execução</li>
+<li>Avaliação por fotos a cada 15 dias</li>
+<li>Treino presencial a cada 15 dias</li>
+<li>Cobrança, ajustes finos e direcionamento constante</li>
+</ul>
+
+<p class="desc">
+Aqui o aluno não “segue plano”.<br>
+Ele tem acompanhamento de verdade.
+</p>
+
+<button class="btn" onclick="window.location.href='https://wa.me/5543996678692'">
+Começar
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Resultados de alunos</h2>
+
+<div class="transformacoes">
+
+<img src="https://images.unsplash.com/photo-1594737625785-c2b0bdebdc6b">
+<img src="https://images.unsplash.com/photo-1598970434795-0c54fe7c0642">
+<img src="https://images.unsplash.com/photo-1546484959-f4c1d6b7c37b">
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>O que os alunos dizem</h2>
+
+<div class="depoimentos">
+
+<div class="card">
+"Perdi 8kg em dois meses e voltei a ter disposição."
+</div>
+
+<div class="card">
+"Treino organizado e acompanhamento que faz diferença."
+</div>
+
+<div class="card">
+"Finalmente consegui manter constância."
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Para quem é esse método</h2>
+
+<div class="publico">
+
+<div>
+
+<h3>Para quem</h3>
+
+<ul>
+<li>Quer emagrecer com estratégia</li>
+<li>Quer ganhar massa muscular</li>
+<li>Precisa de acompanhamento</li>
+<li>Quer parar de perder tempo</li>
+</ul>
+
+</div>
+
+<div>
+
+<h3>Não é para quem</h3>
+
+<ul>
+<li>Não quer treinar</li>
+<li>Quer resultado sem disciplina</li>
+<li>Não quer seguir orientação</li>
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+Método Evolução Workout • Consultoria de treino
+</footer>
+
+<a class="whatsapp" href="https://wa.me/5543996678692">
+💬
+</a>
+
+<script>
+
+const observer = new IntersectionObserver(entries => {
+entries.forEach(entry => {
+if(entry.isIntersecting){
+entry.target.style.opacity = 1
+entry.target.style.transform = "translateY(0)"
+}
+})
+})
+
+document.querySelectorAll(".section").forEach(section=>{
+section.style.opacity = 0
+section.style.transform = "translateY(60px)"
+section.style.transition = "all 0.8s ease"
+observer.observe(section)
+})
+
+</script>
+
+</body>
+</html>
